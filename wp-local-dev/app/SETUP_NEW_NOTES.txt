@@ -1,0 +1,94 @@
+In vagrant...folder in same dir as vagrant file
+dir > app > index.php echo('foo');
+go to puphet dir to config.yaml
+duplicate vhosts: outline 
+change the 1st random identifier ,then change servername, severaliases, and docroot.
+under directories change that random identifier....,update path.
+change all following random identifiers.....
+SAVE file.
+Tell local dev about it...
+go to location where you normal run vagrant up....
+this time run vagrant provision....
+1 to 20 minutes..
+then update 'hosts' file...sudo nano /etc/hosts 
+add new dev address after previous one...
+Restart Browser or Restart Computer ? 
+now it should show up.
+
+ 
+
+ PULLED IN ALL WP FILES....
+
+ create mysql database inside the virtual dev environment....
+
+ cd to vagrant cmd line location.....
+
+ vagrant ssh
+
+ mysql -u root -p 
+
+ pword: 123  FOR THIS SYSTEM 
+
+
+show databases
+
+create database wp-local-dev; ( with the semi colon )
+
+DROP DATABASE xyz;
+
+
+
+SUCCESSFULLY CREATED a data base  
+
+CTRL+C to close out of mySQL
+
+EXIT to get out of ssh !!!
+---------------
+create wp-config.php file that points to the new database.
+
+
+
+SO FAR... this gave me a local wordpress site with a database in the virtual DEV Environment...
+
+HOWEVER,... at this point I do NOT have .git or GULP or node_modules !!!!!
+see this 
+https://www.udemy.com/become-a-wordpress-developer-php-javascript/learn/v4/t/lecture/7314242?start=0
+
+4 Main AUTOMATION files:
+	gulpfile.js 
+	package.json
+	settings.js
+	webpack.config.js
+
+	these can be downloaded at github.com/LearnCodeWeb/vagrant-lamp/
+    move these 4 files where you want theme...
+
+    note: he says he puts them in the WP folder but they are actually in the app folder one DIR up...
+
+  once in position...
+
+    npm install
+
+    open up settings.js( IF YOU ARE USING MAMP or DOCKER )
+    if using VAGRANT setup, then not necessary....
+
+
+    gulp watch
+
+    proxy preview browser 
+
+
+    css workflow based on theme file
+    see imported modules...from styles.css
+
+
+
+
+
+
+
+
+
+
+
+
